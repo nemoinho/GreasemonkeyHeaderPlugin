@@ -1,0 +1,24 @@
+{
+  "name": "greasemonkey-header-plugin",
+  "version": "1.0.0",
+  "description": "This plugin provides the ability to setup a greasemonkey header on top of compiled code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nemoinho/GreasemonkeyHeaderPlugin.git"
+  },
+  "keywords": [
+    "greasemonkey",
+    "webpack",
+    "plugin"
+  ],
+  "author": "Felix Nehrke <felix+webpack-plugins@nehrke.info>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nemoinho/GreasemonkeyHeaderPlugin/issues"
+  },
+  "homepage": "https://github.com/nemoinho/GreasemonkeyHeaderPlugin#readme"
+}
