@@ -11,7 +11,7 @@ As this is a webpack-plugin you need webpack to use this script.
 
 To enable the plugin you configure it as follows in your webpack.config.js:
 
-    const GreasemonkeyHeaderPlugin = require('greasemonkey-header-plugin');
+    const GreasemonkeyHeaderPlugin = require('@nemoinho/greasemonkey-header-plugin');
     const pkg = require('./package');
 
     module.exports = {
