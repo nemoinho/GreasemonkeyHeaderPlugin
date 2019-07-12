@@ -1,6 +1,6 @@
 {
-  "name": "greasemonkey-header-plugin",
-  "version": "1.0.1",
+  "name": "@nemoinho/greasemonkey-header-plugin",
+  "version": "2.0.0",
   "description": "This plugin provides the ability to setup a greasemonkey header on top of compiled code",
   "main": "index.js",
   "scripts": {

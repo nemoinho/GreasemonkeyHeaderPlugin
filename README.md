@@ -4,7 +4,7 @@ A plugin to simply add userscript-headers via webpack.
 
 # Installation
 
-    npm i --save-dev greasemonkey-header-plugin
+    npm i --save-dev @nemoinho/greasemonkey-header-plugin
 
 # Usage
 As this is a webpack-plugin you need webpack to use this script.
