@@ -9,20 +9,13 @@ class GreasemonkeyHeaderPlugin {
         // Just add this line to avoid problems with gm which are not there
         options.grant = options.grant || 'none';
 
-        const lengthOfLongestOption = Object.keys(options)
-            .sort((a, b) => a.length - b.length)
-            .pop()
-            .length;
+        const lengthOfLongestOption = Math.max(...Object.keys(options).map(s => s.length));
 
-        const commentBody = Object.keys(options)
-            .map(key => ({
-                key: key.padEnd(lengthOfLongestOption),
-                value: options[key]
-            }))
-            .map(parts => `// @${parts.key} ${parts.value}`)
+        const commentBody = Object.entries(options)
+            .map(([key, value]) => `// @${key.padEnd(lengthOfLongestOption)} ${value}`)
             .join('\n');
 
-        this.comment = '// ==UserScript==\n' + commentBody + '\n// ==/UserScript==\n'
+        this.comment = '// ==UserScript==\n' + commentBody + '\n// ==/UserScript==\n';
     }
 
     apply(compiler) {
